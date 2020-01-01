@@ -18,7 +18,6 @@ export class Search extends Component {
     if (this.state.text === "") {
       this.props.setAlert("Please enter sth", "light");
     } else {
-      console.log(this.props);
       this.props.searchUsers(this.state.text);
       this.setState({ text: "" });
     }
